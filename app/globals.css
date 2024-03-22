@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*::selection {
-  background: #d7bfb0;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -72,6 +68,10 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-white;
+  }
+
+  .component-card {
+    @apply h-[400px] bg-blue-700 text-white/60 rounded-2xl max-w-80 shadow-lg text-left bg-gradient-to-t from-black/40 to-transparent flex items-end p-10 hover:text-white mx-auto;
   }
 }

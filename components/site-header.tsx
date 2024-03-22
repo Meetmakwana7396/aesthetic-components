@@ -1,37 +1,51 @@
-"use client"
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import { cn } from "@/lib/utils";
-import { GithubIcons } from "./icons";
-import { useRouter } from "next/navigation";
+import React from "react";
 
-export function SiteHeader() {
-  const router = useRouter()
+const SiteHeader = () => {
   return (
-    <header className="sticky top-0 z-50 w-full" role="button" onClick={()=>router.push('/')}>
-      <div className="container py-4">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <h4 className="font-bold text-2xl">aesthetic components</h4>
-            <nav className="ml-6 flex gap-10 text-neutral-600">
-              {/* <Link href={"#"}>Hii</Link>
-              <Link href={"#"}>Hii</Link>
-              <Link href={"#"}>Hii</Link> */}
-            </nav>
-          </div>
-          <div className="flex items-center">
-            Search bar comes here
-            <div className="flex gap-2 ml-4 text-neutral-500">
-              <Link
-                href={"#"}
-                className={cn(buttonVariants({ variant: "ghost" }), "px-2")}
-              >
-                <GithubIcons />
-              </Link>
-            </div>
+    <nav className="h-[160px] flex items-center container text-white">
+      <div className="flex justify-between w-full">
+        <div className="flex items-center justify-between">
+          <Link className=" text-4xl font-bold  tracking-wide" href="#">
+            Bro Codes.
+          </Link>
+        </div>
+
+        {/* <!-- Mobile menu --> */}
+        <div className="hidden md:flex md:items-center">
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <Link
+              className=" text-2xl font-medium hover: md:mx-4 md:my-0"
+              href="#"
+            >
+              Home
+            </Link>
+            <Link
+              className=" text-2xl font-medium hover: md:mx-4 md:my-0"
+              href="#"
+            >
+              About
+            </Link>
+            <Link
+              className=" text-2xl font-medium hover: md:mx-4 md:my-0"
+              href="#"
+            >
+              Services
+            </Link>
+            <Link
+              className=" text-2xl font-medium hover: md:mx-4 md:my-0"
+              href="#"
+            >
+              Contact
+            </Link>
+            <Link href={"#"} className="rounded-full text-xl bg-white p-3 px-8 text-black">
+              Explore components
+            </Link>
           </div>
         </div>
       </div>
-    </header>
+    </nav>
   );
-}
+};
+
+export default SiteHeader;
