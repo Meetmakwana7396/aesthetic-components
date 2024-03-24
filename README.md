@@ -37,10 +37,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 # Inspirations
-[https://www.darkmodedesign.com/](https://www.darkmodedesign.com/)
-[https://minimal.gallery/](https://minimal.gallery/)
-[https://www.awwwards.com/](https://www.awwwards.com/)
-[https://refero.design/](https://refero.design/)
-[https://stacksorted.com/buttons](https://stacksorted.com/buttons)
-Look through magazines.
+- [https://www.darkmodedesign.com/](https://www.darkmodedesign.com/)
+- [https://minimal.gallery/](https://minimal.gallery/)
+- [https://www.awwwards.com/](https://www.awwwards.com/)
+- [https://refero.design/](https://refero.design/)
+- [https://stacksorted.com/buttons](https://stacksorted.com/buttons)
+- Look through magazines.
 
